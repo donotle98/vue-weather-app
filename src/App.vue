@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 75 ? 'warm': ''">
+  <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 73 ? 'warm': ''">
     <main>
       <div class="search-box">
         <input type="text" class="search-bar" placeholder="Search a city..." v-model='query' @keypress="fetchWeather" />
@@ -86,7 +86,7 @@ main{
   min-height: 100vh;
   padding: 25px;
 
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.75));
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.4));
 }
 
 .search-box {
